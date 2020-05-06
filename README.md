@@ -23,7 +23,6 @@ chmod +x install.sh
 ## 更多 V2Ray 教程文章
 https://github.com/233boy/v2ray/wiki
 
-
 关闭BBR：
 nano /etc/sysctl.conf
 
@@ -39,3 +38,4 @@ reboot
 
 如果没有出现bbr证明停止成功
 lsmod | grep bbr
+
