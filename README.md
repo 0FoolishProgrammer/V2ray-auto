@@ -22,3 +22,20 @@ chmod +x install.sh
 
 ## 更多 V2Ray 教程文章
 https://github.com/233boy/v2ray/wiki
+
+
+关闭BBR：
+nano /etc/sysctl.conf
+
+把下面两句注释掉
+# net.core.default_qdisc = fq
+# net.ipv4.tcp_congestion_control = bbr
+
+保存更改
+sysctl -p
+
+重启系统
+reboot
+
+如果没有出现bbr证明停止成功
+lsmod | grep bbr
