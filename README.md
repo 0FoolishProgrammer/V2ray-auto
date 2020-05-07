@@ -9,25 +9,6 @@ cd V2ray-auto
 chmod +x install.sh
 ./install.sh local
 
-安装完成后关闭BBR，步骤如下
-
-关闭BBR：
-nano /etc/sysctl.conf
-
-把下面两句注释掉
-# net.core.default_qdisc = fq
-# net.ipv4.tcp_congestion_control = bbr
-
-保存更改
-sysctl -p
-
-重启系统
-reboot
-
-如果没有出现bbr证明停止成功
-lsmod | grep bbr
-
-
 ```
 
 ## 脚本说明
