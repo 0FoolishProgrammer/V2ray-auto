@@ -980,7 +980,7 @@ install() {
 	blocked_hosts
 	shadowsocks_config
 	install_info
-	try_enable_bbr
+	# try_enable_bbr
 	# [[ $caddy ]] && domain_check
 	install_v2ray
 	if [[ $caddy || $v2ray_port == "80" ]]; then
